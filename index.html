@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="page">
+        <header>
+            <section class="headerWrapper">
+                <nav>
+                    <div class="desktop">
+                        <img src="/image/Logo.png" alt="">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Despre noi</a></li>
+                            <li><a href="#">Produse</a></li>
+                            <li><a href="#">Noutati</a></li>
+                            <li><a href="#">Contacte</a></li>
+                        </ul>
+                        <div class="icons">
+                            <img src="/icons/search.svg" style="fill:white;" alt="">
+                            <img src="/icons/shopping-bag.svg" style="fill:white;" alt="">
+                        </div>
+                    </div>
+                    <div class="mobile">
+                        <img src="/image/Logo.png" alt="logo">
+                        <img src="/icons/hamburger.svg" onclick="onClick()" alt="hamburger" class="hamburger" id="hamburger">
+                        <div class="hamburgerShow">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Despre noi</a></li>
+                                <li><a href="#">Produse</a></li>
+                                <li><a href="#">Noutati</a></li>
+                                <li><a href="#">Contacte</a></li>
+                            </ul>
+                            <div class="icons">
+                                <img src="/icons/search.svg" style="fill:white;" alt="">
+                                <img src="/icons/shopping-bag.svg" style="fill:white;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="content">
+                    <div class="title">
+                        <p class="head">Online Magazin</p>
+                        <p class="subHead">de produse electronice</p>
+                        <div class="location">
+                            <img src="/icons/map-pin.svg" alt="">
+                            <p>în Moldova</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img class="productImage" src="/image/iPhone 12 Mini.png" alt="">
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="specsBlock">
+                            <p class="title">Apple iPhone 12 Mini</p>
+                            <div class="specsList">
+                                <div class="spec">
+                                    <p class="head">Display</p>
+                                    <p class="description">6.1"OLED</p>
+                                </div>
+                                <div class="spec">
+                                    <p class="head">Refresh rate</p>
+                                    <p class="description">120 Hz</p>
+                                </div>
+                                <div class="spec">
+                                    <p class="head">Memorie interna</p>
+                                    <p class="description">128 GB</p>
+                                </div>
+                                <div class="spec">
+                                    <p class="head">RAM</p>
+                                    <p class="description">6 GB</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="buy">
+                                    <img src="/icons/shopping-bag.svg" alt="">
+                                    <span>Cumpara acum</span>
+                                </button>
+                                <button class="showMore">
+                                    <span>Afla mai multe</span>
+                                    <img src="/icons/arrow-right.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <div class="rect"></div>
+        </header>
+
+        <section class="produse">
+            <div class="head">
+                <p class="title">
+                    Produse <br> Recomandate 
+                </p>
+                <div class="numberSlides"></div>
+            </div>
+            <div class="sliderWrapper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <img src="/image/iPhone 12 Mini.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">Apple iPhone 12 Mini</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                          <img src="/image/Google Pixel 4a.png" alt="">
+                          <div class="specsBlock">
+                            <div class="topSpecs">
+                                <p class="title">Google Pixel 4A</p>
+                                <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                            </div>
+                            <div class="underSpecs">
+                                <div class="priceBlock">
+                                    <p class="oldPrice">23499 lei</p>
+                                    <p class="price">21999 lei</p>
+                                </div>
+                                <a href="" class="button">
+                                    <img src="/icons/shopping-bag.svg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/OnePlus 8 Pro.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">OnePlus 8 Pro</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/Samsung Galaxy A50.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">Samsung Galaxy A50</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/iPhone 12 Mini.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">Apple iPhone 12 Mini</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                          <img src="/image/Google Pixel 4a.png" alt="">
+                          <div class="specsBlock">
+                            <div class="topSpecs">
+                                <p class="title">Google Pixel 4A</p>
+                                <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                            </div>
+                            <div class="underSpecs">
+                                <div class="priceBlock">
+                                    <p class="oldPrice">23499 lei</p>
+                                    <p class="price">21999 lei</p>
+                                </div>
+                                <a href="" class="button">
+                                    <img src="/icons/shopping-bag.svg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/OnePlus 8 Pro.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">OnePlus 8 Pro</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/Samsung Galaxy A50.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">Samsung Galaxy A50</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/iPhone 12 Mini.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">Apple iPhone 12 Mini</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                          <img src="/image/Google Pixel 4a.png" alt="">
+                          <div class="specsBlock">
+                            <div class="topSpecs">
+                                <p class="title">Google Pixel 4A</p>
+                                <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                            </div>
+                            <div class="underSpecs">
+                                <div class="priceBlock">
+                                    <p class="oldPrice">23499 lei</p>
+                                    <p class="price">21999 lei</p>
+                                </div>
+                                <a href="" class="button">
+                                    <img src="/icons/shopping-bag.svg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/OnePlus 8 Pro.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">OnePlus 8 Pro</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="/image/Samsung Galaxy A50.png" alt="">
+                        <div class="specsBlock">
+                          <div class="topSpecs">
+                              <p class="title">Samsung Galaxy A50</p>
+                              <p class="specs">4 ГБ/ 256 ГБ Midnight</p>
+                          </div>
+                          <div class="underSpecs">
+                              <div class="priceBlock">
+                                  <p class="oldPrice">23499 lei</p>
+                                  <p class="price">21999 lei</p>
+                              </div>
+                              <a href="" class="button">
+                                  <img src="/icons/shopping-bag.svg" alt="">
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="nav-button next"><img src="/icons/slider-right-arrow.svg" alt=""></div>
+            <div class="nav-button prev"><img src="/icons/slider-right-arrow.svg" alt=""></div>
+
+        </div>
+        </section>
+
+        <section class="caracteristici">
+            <div class="block">
+                <div class="head">
+                    <p class="text">
+                        Până la 2 ani de garanție
+                    </p>
+                    <div class="badge">
+                        <img src="/icons/shield.svg" alt="">
+                    </div>
+                </div>
+                <p class="description">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                </p>
+            </div>
+            <div class="block">
+                <div class="head">
+                    <p class="text">
+                        Până la 2 ani de garanție
+                    </p>
+                    <div class="badge">
+                        <img src="/icons/shield.svg" alt="">
+                    </div>
+                </div>
+                <p class="description">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                </p>
+            </div>
+            <div class="block">
+                <div class="head">
+                    <p class="text">
+                        Până la 2 ani de garanție
+                    </p>
+                    <div class="badge">
+                        <img src="/icons/shield.svg" alt="">
+                    </div>
+                </div>
+                <p class="description">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                </p>
+            </div>
+            <div class="block">
+                <div class="head">
+                    <p class="text">
+                        Până la 2 ani de garanție
+                    </p>
+                    <div class="badge">
+                        <img src="/icons/shield.svg" alt="">
+                    </div>
+                </div>
+                <p class="description">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                </p>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="ads">
+                <div class="head">
+                    <img src="/icons/ads.svg" alt="">
+                    <p class="headText">Aboneaza-te la newsletter-ul nostru</p>
+                    <p class="subHead">Doar cele mai utile știri.</p>
+                </div>
+                <div class="info">
+                    <input type="text" placeholder="E-mail">
+                    <button class="subscribe">
+                        <img src="/icons/send.svg" alt="">
+                        Abonati-va
+                    </button>
+                    <p class="captha">
+                        Acest site este protejat de reCAPTCHA și se aplică Politica de confidențialitate și Termenii și condițiile Google.
+                    </p>
+                </div>
+            </div>
+            <div class="newsItems">
+                <div class="newsItemsWrapper">
+                    <div class="newsItem">
+                        <img src="/image/newsImage1.png" alt="">
+                        <div class="info">
+                            <p class="date">24 Jul 2022</p>
+                            <p class="head">Diam venenatis amet molestie vestibulum vitae id ut lacinia eu.</p>
+                            <p class="description">Nunc justo, eget condimentum in pulvinar nibh. Tempus ipsum sapien sit pulvinar habitasse sagittis, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="newsItem">
+                        <img src="/image/newsImage2.png" alt="">
+                        <div class="info">
+                            <p class="date">24 Jul 2022</p>
+                            <p class="head">Diam venenatis amet molestie vestibulum vitae id ut lacinia eu.</p>
+                            <p class="description">Nunc justo, eget condimentum in pulvinar nibh. Tempus ipsum sapien sit pulvinar habitasse sagittis, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="newsItem">
+                        <img src="/image/newsImage3.png" alt="">
+                        <div class="info">
+                            <p class="date">24 Jul 2022</p>
+                            <p class="head">Diam venenatis amet molestie vestibulum vitae id ut lacinia eu.</p>
+                            <p class="description">Nunc justo, eget condimentum in pulvinar nibh. Tempus ipsum sapien sit pulvinar habitasse sagittis, consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="showMore">
+                   Afisati mai multe
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="rect"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <section class="content">
+            <div class="onside left">
+                <img class="logo" src="/image/Logo.png" alt="">
+                <div class="icons">
+                    <img src="/icons/ico-btn.svg" alt="" class="icon">
+                    <img src="/icons/ico-btn-1.svg" alt="" class="icon">
+                    <img src="/icons/ico-btn-2.svg" alt="" class="icon">
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="center">
+                <ul>
+                  <li><a href="#">Despre noi</a></li>
+                  <li><a href="#">Produse</a></li>  
+                  <li><a href="#">Noutati</a></li>  
+                  <li><a href="#">Contacte</a></li>  
+                </ul>
+                <ul>
+                    <li><a href="#">Garanție si servicii</a></li>
+                    <li><a href="#">Politica de confidențialitate</a></li>
+                    <li><a href="#">Protecția consumatorilor</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="onside right">
+                <img src="/footer/cards.svg" alt="">
+            </div>
+        </section>
+    </footer>
+
+    <script src="/script.js"></script>
+
+<script>
+var hamburgerShow = false;
+function onClick(){
+    hamburgerShow = !hamburgerShow;
+    if(hamburgerShow){
+        document.getElementsByClassName("hamburgerShow")[0].style.display = "flex"
+    }else{
+        document.getElementsByClassName("hamburgerShow")[0].style.display = "none";
+    }
+}
+</script>
+
+</body>
+
+</html>
